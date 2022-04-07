@@ -78,10 +78,10 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT iMsg,
 		}
 
 		if (isMove){
-			if (wParam == VK_RIGHT) v = 1;
-			if (wParam == VK_LEFT) v = 2;
-			if (wParam == VK_DOWN) v = 3;
-			if (wParam == VK_UP) v = 4;
+			if (wParam == VK_RIGHT) v = 1;	//오른쪽 방향키 입력시
+			if (wParam == VK_LEFT) v = 2;	//왼쪽 방향키 입력시
+			if (wParam == VK_DOWN) v = 3;	//아래쪽 방향키 입력시
+			if (wParam == VK_UP) v = 4;		//위쪽 방향키 입력시
 		}
 		if (wParam == VK_RIGHT) SetTimer(hwnd, 1, 500, NULL);
 		break;
